@@ -1,0 +1,37 @@
+<div class="">
+    <div class="">
+        <form #productForm="ngForm"  class="formulario" (ngSubmit)="onSubmit(productForm)">
+            <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="productService.selectedProduct.$key">
+            
+            <div class="form-group mt-3">
+                <input type="text" class="form-control" name="name" placeholder="Agrega el nombre del producto" autocomplete="off" required
+                #name="ngModel" [(ngModel)]="productService.selectedProduct.name">
+            </div>
+
+            <div class="form-group mt-3 ">
+                <input type="text" class="form-control" name="category" placeholder="Agrega la categoria del producto" autocomplete="off" required
+                #category="ngModel" [(ngModel)]="productService.selectedProduct.category">
+            </div>
+
+            <div class="form-group mt-3">
+                <input type="text" class="form-control" name="location" placeholder="Agrega la localizacion del producto" autocomplete="off" required
+                #location="ngModel" [(ngModel)]="productService.selectedProduct.location">
+            </div>
+
+            <div class="form-group mt-3">
+                <input type="text" class="form-control" name="price" placeholder="Agrega el precio del producto" autocomplete="off" required pattern="[0-9]"
+                #price="ngModel" [(ngModel)]="productService.selectedProduct.price">
+            </div>
+            
+            <div class="botones">                                                                                                                                                               
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-plus-circle"></i> Agregar producto
+                </button>
+                <button class="btn btn-secondary" type="reset" (click)="resetForm(productForm)">
+                    <i class="fas fa-sync-alt"></i> Limpiar
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>

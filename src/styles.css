@@ -1,1 +1,227 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    background-color: rgb(48, 48, 48);
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    background-color: rgb(18, 247, 170);
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding-top:10px ;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(58, 57, 57);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.form-group{
+    display: inline;
+    
+}
+
+.form-group input{
+    width: 220px;
+    margin: 10px;
+    padding:7px 0px;
+    color: rgb(23, 226, 158);
+    background-color: rgb(39, 39, 39);
+    border-radius: 5px;
+    border: 1px solid rgb(9, 105, 73);
+    padding-left: 7px;
+    box-sizing: border-box;  
+    
+}
+
+input:focus{
+    box-shadow: inset 0 0 1px 2px rgb(9, 105, 73);
+    outline: none;
+}
+
+
+input::placeholder {
+    color: rgb(60, 116, 97);
+    
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+
+.botones .btn{
+    width: 150px;
+    margin: 10px;
+    padding: 7px;
+}
+
+.btn-primary{
+    background-color: rgb(39, 39, 39);
+    border-radius: 5px;
+    border: 1px solid rgb(24, 202, 0);
+    color: rgb(24, 202, 0);
+}
+
+.btn-secondary{
+    background-color: rgb(39, 39, 39);
+    border-radius: 5px;
+    border: 1px solid rgb(202, 188, 0);
+    color: rgb(202, 188, 0);
+}
+
+.btn:hover{
+    cursor: pointer;
+    
+    box-shadow: inset 0 0 1px 1.5px rgb(224, 224, 224);
+}
+
+.btn:active{
+    background-color: rgb(65, 65, 65);
+}
+
+.card{
+
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+.card-body{
+    width: 100%;
+}
+
+h6{
+    font-size: 22px;
+    color: rgb(9, 105, 73);
+    margin: 30px 0px 15px 0px;
+}
+
+table{
+    border-spacing: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0.5px rgb(9, 105, 73);
+    font-size: 18px;
+ 
+}
+tr:hover{
+    background-color: rgb(9, 105, 73);
+}
+
+
+td{
+    padding: 10px 25px;
+    box-sizing: border-box;
+    color: rgb(243, 243, 243);
+}
+
+
+.a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+
+}
+
+.primer{
+    background-color: rgb(9, 105, 73);
+}
+
+.btn-table{
+    margin: 10px;
+    padding: 4px;
+
+    border-radius: 5px;
+}
+
+.edit:hover{
+    color: rgb(248, 149, 0);
+    cursor: pointer;
+}
+
+.delete:hover{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+
+@media (max-width: 960px) {
+    .form-group input{
+        width: 300px;
+    }
+
+    table{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 690px) {
+    .container{
+        margin-top: 10px;
+    }
+    .navbar{
+        height: 20px;
+        padding: 2px;
+    }
+
+    .navbar a,h6{
+        font-size: 18px;
+    }
+
+    h6{
+        margin-top: 15px;
+    }
+
+    .form-group input{
+        margin: 5px;
+        padding: 4px;
+    }
+
+    table{
+        width: 100%;
+        box-shadow: none;
+    }
+    
+    td{
+        padding: 10px 10px;
+    }
+    
+    .btn-table{
+        margin: 0px;
+
+    }
+}
+@media (max-width: 475px) {
+    input{
+        font-size: 10px;  
+    }
+
+    table{
+        font-size: 10px;
+    }
+
+    .botones .btn{
+        font-size: 10px;
+        margin: 10px;
+        padding: 4px;
+        width: 100px;
+    }
+}
