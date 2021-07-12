@@ -44,7 +44,8 @@ body{
     border-radius: 5px;
     border: 1px solid rgb(9, 105, 73);
     padding-left: 7px;
-    box-sizing: border-box;     
+    box-sizing: border-box;  
+    
 }
 
 input:focus{
@@ -135,9 +136,7 @@ td{
     justify-content: center;
 }
 
-a{
 
-}
 
 .primer{
     background-color: rgb(9, 105, 73);
